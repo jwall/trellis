@@ -1,7 +1,7 @@
 # Documentation: https://github.com/roots/trellis#mail
 mailhog_install_ssmtp: no
-mail_admin: admin@compassionatecare.dev
-mail_hostname: compassionatecare.dev
+mail_admin: admin@webpeak.dev
+mail_hostname: webpeak.dev
 mail_smtp_server: localhost:1025
 ssmtp_auth_method: ""
 ssmtp_start_tls: 'no'

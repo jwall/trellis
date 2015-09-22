@@ -1,0 +1,28 @@
+# Documentation: https://github.com/roots/trellis#wordpress-sites
+wordpress_sites:
+  webpeak.com:
+    site_hosts:
+      - webpeak.dev
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    repo: git@github.com:roots/bedrock.git
+    site_install: true
+    site_title: Webpeak Technologies
+    admin_user: admin
+    admin_password: admin
+    admin_email: admin@webpeak.dev
+    multisite:
+      enabled: false
+      subdomains: false
+    ssl:
+      enabled: false
+    cache:
+      enabled: false
+      duration: 30s
+    system_cron: true
+    env:
+      wp_home: http://webpeak.dev
+      wp_siteurl: http://webpeak.dev/wp
+      wp_env: development
+      db_name: webpeak_dev
+      db_user: webpeak_dbuser
+      db_password: webpeak_dbpassword
